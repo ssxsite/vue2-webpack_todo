@@ -10,3 +10,5 @@ extract-text-webpack-plugin建议换成其他功能类似的loader。
 
 //contentHash 和 chunkhash 还有hash的区别。hash是每次打包所有文件的hash都是一样的，这样一个文件修改，其他文件都得重新打包，缓存就失效了。chunkhash，一个chunk就一个hash；
 contentHash 内容有变化的时候才生成新的hash.
+
+//生产环境配置chunkhash是为了浏览器缓存。
